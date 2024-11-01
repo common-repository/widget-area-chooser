@@ -1,0 +1,103 @@
+div.widget-liquid-left div#widgets-left {
+	position: relative;
+}
+
+div.widget-liquid-left div#widgets-left.chooser #available-widgets .widget,
+div.widget-liquid-left div#widgets-left.chooser .inactive-sidebar {
+	transition: opacity 0.2s ease-in-out;
+}
+
+div.widget-liquid-left div#widgets-left.chooser #available-widgets .widget,
+div.widget-liquid-left div#widgets-left.chooser .inactive-sidebar {
+	/* -webkit-filter: blur(1px); */
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+div.widget-liquid-left div#widgets-left.chooser #available-widgets .widget-in-question {
+	/* -webkit-filter: none; */
+	opacity: 1;
+	pointer-events: auto;
+}
+	div.widget-liquid-left div#widgets-left.chooser #available-widgets .widget-in-question .widget-top {
+		background: #fff;
+		border: 1px solid #bbb;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	}
+
+#widget-area-chooser {
+	display: none;
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+	#widget-area-chooser h3 {
+		font-size: 14px;
+		margin: 30px 0 15px 0;
+	}
+
+	#widget-area-chooser ul.wac-sidebars {
+		margin: 0 0 20px 0;
+		list-style-type: none;
+	}
+		#widget-area-chooser ul.wac-sidebars li {
+			padding: 10px 15px 10px 35px;
+			background: #fff;
+			border: 1px solid #ccc;
+			border-bottom: none;
+			margin: 0;
+			cursor: pointer;
+		}
+		#widget-area-chooser ul.wac-sidebars li:hover {
+			background: rgba(255,255,255,0.7);
+		}
+		#widget-area-chooser ul.wac-sidebars li.wac-selected {
+			background: #1075a0;
+			color: #fff;
+			position: relative;
+		}
+		#widget-area-chooser ul.wac-sidebars li.wac-selected:before {
+			content: '\f147';
+			display: block;
+			-webkit-font-smoothing: antialiased;
+			font: normal 26px/1 'dashicons';
+			position: absolute;
+			top: 7px;
+			left: 5px;
+		}
+		#widget-area-chooser ul.wac-sidebars li:last-child {
+			border-bottom: 1px solid #ccc;
+		}
+
+	#widget-area-chooser select {
+		width: 100%;
+		margin-bottom: 20px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	#widget-area-chooser .sidebar-radios {
+		text-align: left;
+		margin: 0 20px 20px 20px;
+	}
+		#widget-area-chooser .sidebar-radios li {
+			margin-top: 15px;
+		}
+		#widget-area-chooser .sidebar-radios label {
+			font-size: 15px;
+		}
+		#widget-area-chooser .sidebar-radios input {
+			margin-right: 10px;
+		}
+
+	#widget-area-chooser .wac-actions {
+		clear: both;
+		text-align: center;
+	}
+	#widget-area-chooser button {
+		margin-right: 5px;
+	}
+
+#available-widgets .widget .widget-top {
+	cursor: pointer;
+}
